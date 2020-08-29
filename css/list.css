@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* 钴镍铜开始 */
+.gg-centbox{width: 100%;overflow:hidden;padding-bottom: 30px;background: url(../images/bbgg.png) no-repeat 0 0/100% 100%;}
+.gg-centMain{width: 1200px;margin: 30px auto;/* height: 800px; */overflow: hidden;}
+.gg-centMain .gg-text{width: 100%;}
+.gg-centMain .gg-img{width: 100%;position: relative;overflow: hidden;margin-bottom: 20px;}
+.gg-centMain .gg-img img{width: 100%;}
+.gg-centMain .gg-img p{position: absolute;bottom:15px;color: #000;font-size: 14px;color: #fff;right: 4%;}
+.gg-centMain .gg-img h2{position: absolute;top: 20px;left: 30px;color: #000;font-size: 18px;}
+.gg-centMain .gg-img img:hover{transform: scale(1.1);-webkit-transform: scale(1.1);-ms-transform: scale(1.1);-o-transform: scale(1.1);-o-transition: all .4s;-moz-transition: all .4s;transition: all .4s;-webkit-transition: all .4s;}
+.gg-centMain .gg-text {width: 1200px;overflow: hidden;margin-bottom: 10px;}
+.gg-centMain .gg-text  img{width: 100%;}
+.gg-centMain .gg-text  img:hover{transform: scale(1.1);-webkit-transform: scale(1.1);-ms-transform: scale(1.1);-o-transform: scale(1.1);-o-transition: all .4s;-moz-transition: all .4s;transition: all .4s;-webkit-transition: all .4s;}
+.gg-centMain  p{font-size: 15px;margin-bottom: 20px;}
+
+/* 制造业 */
+.zz-centbox{width: 100%;background: url(../images/bbgg.png) no-repeat 0 0/100% 100%;overflow: hidden;padding-bottom: 50px;}
+.zz-centMain{width: 1200px;margin:40px auto;}
+.zz-cont{width: 1200px;overflow: hidden;margin: auto;}
+.zz-cont .zz-txt{float: left;width: 390px;line-height: 26px;font-size: 15px;text-indent: 2em;color: #333;}
+.zz-cont .zz-txt h2{padding-top: 10px;padding-bottom: 30px;font-size: 22px;color: #000;}
+.zz-cont .zz-text{float: right;width: 770px;height: 500px;position: relative;overflow: hidden;}
+.zz-cont .zz-text h2{width: 100%;padding-top: 20px;padding-bottom: 25px;color: #fff;position: absolute;top: 20px;display: inline-block;background: rgba(24,122,207,.7);line-height: 26px;text-align: center;font-size: 18px;}
+.zz-list{width: 1200px;margin: auto;padding-top: 15px;overflow: hidden;}
+.zz-list h6{padding-bottom: 6px;font-size: 18px;}
+.zz-list ul li{width: 390px;float: left;margin-right: 10px;overflow: hidden;}
+.zz-list ul li a img{width: 100%;overflow: hidden;}
+/* .zz-list ul li a img:hover{transform: scale(1.1);-webkit-transform: scale(1.1);-ms-transform: scale(1.1);-o-transform: scale(1.1);-o-transition: all .4s;-moz-transition: all .4s;transition: all .4s;-webkit-transition: all .4s;}
+ */
+.zz-list ul li p{padding-top: 8px;color: #000000;font-size: 15px;}
+.zp{width: 1200px;padding-bottom: 20px;padding-top: 30px;line-height: 26px;font-size: 14px;color: #333;text-indent: 2em;}
+.zz-li{width:1200px;margin: auto;overflow: hidden ;}
+.zz-li ul li{width:590px;overflow: hidden;}
+.zz-li ul li a img:hover{transform: scale(1.1);-webkit-transform: scale(1.1);-ms-transform: scale(1.1);-o-transform: scale(1.1);-o-transition: all .4s;-moz-transition: all .4s;transition: all .4s;-webkit-transition: all .4s;}
+

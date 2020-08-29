@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0;font-size: 14px;/* color: #444; */}
+html{ -webkit-text-size-adjust:none;}
+html, body{overflow-x: hidden;}
+
+.bannerList li, .bannerList li .line, .bannerList li p, .bannerList li div
+{
+   transition:all .4s ease-in-out 0s;
+  -webkit-transition:all .4s ease-in-out 0s;
+   -moz-transition:all .4s ease-in-out 0s; 
+  -ms-transition:all .4s ease-in-out 0s; 
+  -o-transition:all .4s ease-in-out 0s; 
+}
+.bannerList{
+	font-size: 0;
+}
+.bannerList li{display: inline-block;vertical-align: middle;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

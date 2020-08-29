@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>江西钨业控股集团有限公司</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<style>
+        ul,
+        li {
+            /*做时间轴的线*/
+            margin: 0;
+            padding: 0;
+        }
+
+        .layui-timeline {
+            padding-left: 5px;
+        }
+
+        .layui-timeline-item {
+            position: relative;
+            padding-bottom: 40px;
+            padding-left: 40px;
+			font-size: 16px;
+        }
+        .layui-timeline-item:hover{
+        	font-size: 20px;
+			color: #c92e26;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .layui-timeline-item:first-child::before {
+            display: block;
+        }
+
+        .layui-timeline-item:last-child::before {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 0;
+            z-index: 0;
+            width: 0;
+            height: 100%;
+        }
+        .layui-timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            z-index: 0;
+            width: 1px;
+            height: 100%;
+        }
+
+        .layui-timeline-item::before,
+        hr {
+            background-color: #999;
+        }
+
+        .layui-timeline-axis {
+            position: absolute;
+            left: -28px;
+            top: 0;
+            z-index: 10;
+            width: 12px;
+            height: 12px;
+            line-height: 12px;
+            background-color: #c92e26;
+            /* color: #5FB878; */
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+			border: 2px solid #666;
+        }
+        li:hover .layui-timeline-axis{
+        	font-size: 40px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			left: -31px;
+        }
+
+        .layui-icon {
+            font-family: layui-icon !important;
+            font-size: 28px;
+            font-style: normal;
+        }
+
+        .layui-timeline-content {
+            padding-left: 25px;
+        }
+
+        .layui-text {
+            line-height: 22px;
+            font-size: 25px;
+            color: #666;
+        }
+
+        .layui-timeline-title {
+            position: relative;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+	<!-- 导航 -->
+	<div class="m-nav-box" >
+		<div class="m-nav c">
+			<a href="javascript:void(0)"><img src="images/logo1.jpg" alt="logo" class="logo"></a>
+				<ul>
+					<li class="nav-click">
+						<div class="m-nav-text">
+							<span>关于我们</span>
+							<div class="m-nav-list">
+								<img src="images/index09.png" alt="">
+								<a href="about.html">公司概况</a>
+								<a href="gg-assets.html">高管人员</a>
+								<a href="mh-zuzhi.html">组织架构</a>
+								<a href="bnwj.html">百年江钨</a>
+								<a href="enterprise.html">企业文化</a>
+								<a href="rczp.html">人才招聘</a>
+								<a href="contact.html">联系我们</a>
+								<a href="wjren.html">江钨人</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-click">
+						<div class="m-nav-text">
+							<span>企业运营</span>
+							<div class="m-nav-list">
+								<img src="images/index09.png" alt="">
+								<a href="mg-2-assets.html">资本运营</a>
+								<a href="products.html">公司产品</a>
+								<a href="yield.html">生产动态</a>
+								<a href="safety.html">安全环保</a>
+								<a href="manage.html">经营管理</a>
+								<a href="invest.html">投资建设</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-click">
+						<div class="m-nav-text">
+							<span>可持续发展</span>
+							<div class="m-nav-list">
+								<img src="images/index09.png" alt="">
+								<a href="science.html">科技创新</a>
+								<a href="mh-fazhan.html">绿色发展</a>
+								<a href="according.html">依法治企</a>
+								<a href="society.html">社会责任</a>
+								<a href="safeness.html">平安建设</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-click">
+						<div class="m-nav-text">
+							<span>党的建设</span>
+							<div class="m-nav-list">
+								<img src="images/index09.png" alt="">
+								<a href="politics.html">政治建设</a>
+								<a href="organizational.html">组织建设</a>
+								<a href="leader.html">领导班子和干部队伍建设</a>
+								<a href="ideology.html">意识形态</a>
+								<a href="mh-jiandang.html">党建工作</a>
+								<a href="dangfeng.html">党风廉政建设</a>
+								<a href="talents.html">人才工作</a>
+								<a href="alliance.html">群团工作</a>
+								<a href="subject.html">主题教育</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-click">
+						<div class="m-nav-text">
+							<span>媒体视野</span>
+							<div class="m-nav-list">
+								<img src="images/index09.png" alt="">
+								<a href="news.html">新闻</a>
+								<a href="vedeo.html">视频</a>
+								<a href="media.html">媒体江钨</a>
+							</div>
+						</div>
+					</li>
+					</ul>
+				<a class="m-search_btn" href=""></a>
+					<div class="m-language_sel">
+						<a href="javascript:setCookie('local','EN')">English</a>
+					</div>
+				<div class="nav_btn"><span></span></div>
+			</div>
+		</div>
+	</div>
+	<!-- 轮播图 -->
+	 <div class="bor-box">
+	 		 <div class="m-swiperv-box">
+	 		   <ul>
+	 		 	  <li><a href="javascript:void(0);"><img src="images/ban2.png" alt=""></a></li>
+	 			 <!-- <li class="swiper-slide"><a href="javascript:void(0);"><img src="images/ban1.png" alt=""></a></li> -->
+	 		   </ul>
+	 		 </div>
+	  </div>
+	 <!-- 内容-->
+	<div class="bj-conenter">
+		<div class="bj-conenterMain">
+			<span><img src="images/1907.png" alt=""></span>
+			<div>
+				<ul class="layui-timeline">
+					<li class="layui-timeline-item">
+						<i class="layui-icon layui-timeline-axis"></i>
+					2016年  江西钨业控股集团有限公司。</li>
+					<li class="layui-timeline-item">
+					 <i class="layui-icon layui-timeline-axis"></i>2008年  江西稀有金属钨业控股有限公司。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						2003年  出资成立 江西钨业集团有限公司。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						2000年  江西稀有稀土金属钨业集团公司。 </li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1999年  中国稀有稀土金属钨业集团公司。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1990年  撤销中国华兴钨业公司。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1983年  中国华兴钨业公司、中国有色金属工业总公司南昌公司。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1980年  江西省冶金厅。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1972年  江西省冶金局。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1969年  江西省重工业局。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1958年  江西有色金属工业管理局（冶金工业局）。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1955年  中央重工业部成立中南钨矿局。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1953年  大吉山、西华山钨矿列入苏联援建的156项重点工程项目。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1952年  成立中央重工业部有色局中南分局。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1951年  重工业部有色金属管理总局，中南有色总局江西分局。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1950年   成立中南有色总局江西分局。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1949年  赣州军管会接管江西钨锡矿业有限公司。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1948年  改称江西钨锡矿业有限公司。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1946年  改称第一区特种矿产管理处。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1936年  设立江西省钨业管理处。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1935年  设立江西省钨矿局。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1932年  在铁山垅成立中华钨矿公司。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1914-1921年   西华山、大吉山、盘古山等地陆续开山民采。</li>
+					<li class="layui-timeline-item">
+					<i class="layui-icon layui-timeline-axis"></i>
+						1907年  在西华山发现钨矿石。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	 <!-- 底部内容 -->
+	 <div class="footer">
+	 	<div class="public-wid">
+	 		<div class="fl">
+	 			<div class="foot-menu">
+	 						<a href="javascript:;">网站地图<span>|</span></a>
+	 			            <a href="javascript:;">友情链接<span>|</span></a>
+	 						<a href="javascript:;">法律声明<span>|</span></a>
+	 						<a href="javascript:;">常见问题<span>|</span></a>
+	 						<a href="javascript:;">联系我们<span></span></a>
+	 					<span>邮箱：mail.jxtc.com.cn</span>
+	 					</div>
+	 					<div class="foot-bq">
+	 						<span>版权所有@2020江西钨业控股集团有限公司</span>
+	 						<span>赣ICP备14006739号</span>
+	 						<span><img src="images/jj.png" alt="" class="image">赣公网安备 36010902000115号</span>
+	 					</div>
+	 		</div>
+	 				<div class="float-r">
+	 					<span><img src="images/40.png" alt="新浪微博" title="新浪微博"></span>
+	 					<span><img src="images/41.png" alt="微信" title="微信"></span>
+	 				</div>
+	 	</div>
+	 </div>
+</body>
+<script type="text/javascript">
+	var liList = $('.layui-timeline-item')
+	for (var x = 0; x < liList.length; x++) {
+
+            liList[x].onmouseover = function () {
+                this.style.fontSize = "20px";
+
+            }
+
+            liList[x].onmouseout = function () {
+                this.style.fontSize = "16px";
+            }
+        }
+	// $('.layui-timeline-item').mouseover(function(){
+	// 	this.css('font-size', '20')
+	// 	console.log(111)
+	// })
+</script>
+
+</html>
